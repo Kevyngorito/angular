@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CourseListComponent } from './courses/course-list.component';
 import { Course } from './courses/course';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CourseListComponent
+    
+    CourseListComponent,
+    StarComponent,
     
   ],
   imports: [
