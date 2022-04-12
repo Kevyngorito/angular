@@ -8,6 +8,7 @@ import { CourseListComponent } from './courses/course-list.component';
 import { StarComponent } from './courses/star/star.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { Error404Component } from './error-404/error-404.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     CourseListComponent,
     StarComponent,
     ReplacePipe,
-    NavBarComponent
+    NavBarComponent,
+    Error404Component
     
   ],
   imports: [
@@ -27,6 +29,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
       },
       {
         path: 'courses', component: CourseListComponent
+      },
+      {
+        path: '**', component: Error404Component
       }
     ])
   ],
